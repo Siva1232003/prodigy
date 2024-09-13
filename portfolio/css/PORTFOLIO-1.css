@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+}
+
+.navbar {
+    background-color: #16325B;
+}
+
+.resume-btn {
+    background-color: #16325B;
+    color: white;
+    border-radius: 40px !important;
+}
+
+.ttext {
+    text-align: justify;
+}
+
+.card {
+    border: 2px solid #16325B;
+}
+
+.card-body button {
+    border-radius: 40px;
+    background-color: #16325B;
+    color: white;
+}
+
+.button {
+    border-radius: 40px;
+    color: white;
+    background-color: #16325B;
+}
+
+footer {
+    background-color: #16325B;
+    color: white;
+}
+
+.socio svg {
+    width: 40px;
+    height: 40px;
+}
+
+.socio svg:hover {
+    background-color: #16325B;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+@media screen (max-width:321px) {
+    .resume-btn {
+        background-color: #16325B;
+        color: white;
+        border-radius: 20px !important;
+        margin-top: 25px
+        
+    }      
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stopwatch.css">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="head">
+        <h1>STOPWATCH</h1>
+    </div>
+    <div class="container">
+        <div id="stop-dura">00:00:00:00</div>
+        <ul id="laps"></ul> <!-- Laps will be displayed here -->
+        <div class="lapsbutton">
+            <button id="reset" style="display: none;">Reset</button>
+            <button id="lap" disabled>Laps</button>
+            <button id="start">Start</button>
+            <button id="stop" style="display: none;">Stop</button>
+        </div>
+    </div>
+    <script src="js/stopwatch.js"></script>
+</body>
+</html>

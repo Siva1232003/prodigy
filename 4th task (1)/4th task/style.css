@@ -1,0 +1,714 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+p,h1,h2,h3,h4{
+    padding: 0 ;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding,60px);
+}
+a{
+    
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    padding-top: 4rem;
+}
+nav{
+    height: 4rem;
+}
+
+
+
+
+
+
+                              /* Landing Page Styling */
+
+#landingPage{
+
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 4rem);
+    
+    outline: 5px solid white;
+  
+    
+   
+   
+}
+
+#landingPage::after{
+    content: '';
+    position: absolute;
+    background:linear-gradient(rgba(23, 23, 205, 0.871),rgb(240, 29, 64));
+    top: 0;
+    z-index: -3;
+    inset: 0;
+    mix-blend-mode: color;
+   
+}
+#landingPage::before{
+    content: '';
+    position: absolute;
+    background:black;
+    opacity: 40%;
+    top: 0;
+    z-index: -2;
+    inset: 0;
+ 
+   
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+}
+.businessLogo{
+    color: white;
+    text-align: center;
+    flex: 1;
+  
+}
+
+
+
+.menuItems{
+   
+    flex: 4;
+    
+    text-align: center;
+    
+  
+}
+
+.toggleButton{
+    display: none;
+    
+    color: white;
+    font-size: 1.8rem;
+}
+.menuItems a{
+    padding-inline: 5px;
+    color: white;
+}
+
+
+.landingText{
+   
+    margin:0 auto;
+    
+    padding-block: 3rem;
+    padding-inline: 20%;
+    text-align: center;
+   
+
+}
+.subText{
+    padding-top: 2rem;
+}
+.subText,.mainText{
+    color: white;
+
+}
+
+.landingButtons{
+    padding-top: 2rem;
+}
+
+
+
+                                                  /* About us Styling */
+
+#aboutUs{
+
+    padding:6rem;
+}                                                  
+.aboutFlexBoxOne{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.aboutImage{
+  
+    flex: 1;
+    padding-right: 1rem;
+}
+.aboutImage img{
+    width: 100%;
+    height:100%;
+   
+    
+    
+}
+
+.aboutText{
+    flex: 1;
+    padding-left: 1rem;
+}
+.aboutSubText{
+    color: grey;
+   
+
+}
+.aboutSubText h5{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.aboutMainText p{
+    font-size: 1.3rem;
+}
+
+
+
+.aboutFlexBoxTwo{
+    display: flex;
+}
+
+.emptySpace{
+    flex: 1;
+}
+
+.reviewFlexBox{
+    display: flex;
+    flex: 1;
+    padding-left: 3rem;
+  
+   
+  
+}
+.reviewImage{
+    width: 4rem;
+    border-radius: 500px;
+    border: 3px solid grey;
+    overflow: hidden;
+    
+}
+.reviewText{
+    padding-left: 1rem;
+    padding-top: 1.1rem;
+}
+
+.reviewImage img{
+    width: 100%;
+    height: 100%;
+  
+    aspect-ratio: 1/1;
+}
+
+
+                                                              /* Services Styling */
+
+
+
+.serviceIcon i{
+    position: relative;
+    z-index: 2;
+  
+}
+.serviceIcon i::after{
+    content: '';
+    position: absolute;
+    bottom: -1.2rem;
+    left: -1.4rem;
+    background-color: rgb(255, 252, 252);
+    border: 30px solid white;
+    border-radius: 500px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.129);
+    z-index: -1;
+}
+
+.iconName{
+    padding-top: 2rem;
+}
+
+
+.wait{
+    padding-inline: 5rem;
+}
+#grey{
+    text-align: center;
+}
+
+
+
+
+
+                                                        /* Clients Styling */
+
+
+.client{
+   width: 15rem;
+   padding-block: 1rem;
+}
+
+
+#carouselExampleCaptions{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+
+
+                                                        /* Team Styling */
+
+#team{
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+}
+.teamImage{
+    width: 70%;
+    aspect-ratio: 1/1;
+  
+    margin: 0 auto;
+}
+.teamImage img{
+    width: 100%;
+    height: 100%;
+}
+
+.socialMediaIcons a{
+    margin: 0 0.5rem;
+}
+.teamRole{
+    margin-bottom: 4px !important;
+}
+
+.teamName{
+    padding-top: 0.5rem;
+    margin-bottom: 0px !important;
+}
+
+.teamRow div{
+    padding-inline: 0px !important;
+}
+
+
+
+
+
+                                                                     /* Form and Map Styling */
+
+
+
+#formAndMap{
+    width: 100%;
+ 
+    padding: 4rem;
+}
+.formMapConatiner{
+    width: 100%;
+}
+
+
+.iframewbc{
+    width: 100%;
+    height: 100%;
+  
+}
+
+.iframewbc iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+                                                                        /* Footer Styling */
+
+
+
+
+.footerOneHeaderFlex{
+    display: flex;
+}
+.footerOneIcon{
+    
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+  
+
+}
+.footerOneIcon i{
+    font-size: 1.5rem;
+   
+    
+   
+}
+.footerOneHeader{
+    padding-left: 0.5rem;
+    
+
+}
+.footerOneText p{
+    text-align: justify;
+}
+ul{
+    line-height: 2rem;
+}
+
+
+.footerFourImage{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.footerFourImage img{
+    width: 65%;
+    cursor: pointer;
+}
+#break{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1023px) {
+
+  
+
+    .menuItems a{
+        padding-inline: 1.5rem;
+
+        
+       
+    }
+    .menuItems{
+        padding-top: 0.5rem;
+    }
+    #menuBox{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    .aboutFlexBoxOne{
+   
+        display: block;
+        
+    }
+    .reviewImage{
+        width: 4rem;
+       
+        
+    }
+    .footerFourImage{
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .footerFourImage img{
+        width: 60%;
+        cursor: pointer;
+    }
+    .reviewFlexBox{
+        padding-left: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .emptySpace{
+        display: none;
+    }
+
+   
+   
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px){
+
+
+               
+
+      .toggleButton{
+        display: block;
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    .menuItems a{
+        display: block;
+        padding-top: 2rem;
+    }
+    li a{
+        padding-top: 0 !important;
+    }
+
+    .menuItems{
+        position: fixed;
+       
+        top: 4rem;
+        right:-100%;
+        
+        width: 60%;
+        height: 92%;
+        border-top: 2px solid white;
+        border-left: 2px solid white;
+      
+        transition: right 1s ease;
+    }
+
+    .show{
+        right: 0;
+        transition:right 1s ease;
+    }
+    .logo{
+        padding-top: 8px;
+    }
+
+
+    .dropdown-menu{
+        left: 35% !important;
+
+    }
+
+                                                              /* menuBar styling Ends */
+
+
+
+    #ding{
+        display: none;
+    }
+
+    .aboutText > div  p,.aboutText > div  h5{
+        text-align: justify;
+    }
+
+    .aboutImage{
+        padding-right: 0;
+    }
+
+    .reviewImage{
+        margin-top: 0.5rem;
+        
+        width: 3rem;
+        height: 3rem;
+       
+        
+    }
+    .reviewImage img{
+        width: 100%;
+        height: 100%;
+       
+      
+       
+    }
+
+
+    p{
+        font-size: 12px;
+    }
+
+    h6{
+        font-size: 0.8rem !important;
+    }
+    h5{
+        font-size: 0.8rem !important
+    }
+    h2{
+        font-size: 1.5rem !important
+    }
+
+
+    .client{
+        width: 15rem;
+        padding-block: 1rem;
+     }
+     
+     
+     #carouselExampleCaptions{
+         width: 90%;
+         margin: 0 auto;
+         padding-bottom: 3rem;
+     }
+
+     .teamImage{
+        width: 60%;
+   
+    }
+
+
+
+    .iframewbc{
+        width: 100%;
+        height: 15rem;
+      
+    }
+
+    .formHeader{
+        padding-top: 1rem;
+    }
+
+    #formAndMap{
+        padding-inline: 2.5rem;
+        padding-block: 4rem;
+    }
+    #team{
+        padding-inline: 1rem;
+    }
+
+    #aboutUs{
+
+        padding:10%;
+    }   
+
+
+    .footerOneHeaderFlex{
+        justify-content: center;
+    }
+
+    .socialMediaIcons{
+     display: flex;
+     justify-content: center;
+    }
+
+    .textsocialMediaIcons a{
+        padding-inline: 0.5rem;
+    }
+
+    .columnTwo{
+        text-align: center;
+    }
+    .columnThree{
+        text-align: center;
+    }
+
+    .footerOneText p{
+        text-align: center;
+    }
+
+    .columnFour{
+        text-align: center;
+    }
+    .footerFourImage img{
+        width: 40%;
+       
+    }
+    ul{
+        padding-left: 0 !important;
+    }
+    #formAndMap{
+        width: 100%;
+       
+    }
+    .aboutMainText p{
+        font-size: 1rem;
+    }
+ 
+
+
+
+
+
+
+
+} 
+
+
+
+
+@media screen and (max-width:426px){
+   
+   
+    #fontSize{
+        font-size: 20px;
+    }
+    .landingButtons > a button{
+        margin-top: 10px;
+        
+    }
+
+    .dropdown-menu{
+        left: 8% !important;
+
+    }
+    .aboutMainText p{
+        font-size: 0.7rem;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+    .emptySpace{
+        flex: 1;
+    }
+    
+    .reviewFlexBox{
+        display: flex;
+        flex: 2;
+      
+       
+      
+    }
+
+
+    .client{
+        width: 10rem;
+        padding-block: 1rem;
+     }
+     
+     
+     #carouselExampleCaptions{
+         width: 95%;
+         margin: 0 auto;
+         padding-bottom: 3rem;
+     }
+
+     #formAndMap{
+       
+        padding-inline: 1.5rem;
+        padding-block: 4rem;
+    }
+    .formMapConatiner{
+        width: 100%;
+    }
+   
+ 
+
+    .footerOneText{
+        padding-inline: 0.5rem;
+    }
+    #break{
+        display: block;
+    }
+    .contactUs{
+        margin-top: 10px;
+    }
+
+
+
+
+   
+    
+}
