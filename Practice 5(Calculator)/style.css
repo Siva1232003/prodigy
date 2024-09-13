@@ -1,0 +1,135 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+body{
+    cursor:none;
+}
+
+.cursorDot{
+   
+    width: 5px;
+    height: 5px;
+    
+    background-color: white;
+  
+
+}
+.cursorOutline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(85, 85, 85);
+   
+
+}
+
+.cursorDot,.cursorOutline{
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+   
+    transform: translate(-50%,-50%);
+
+}
+
+#blocks{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: -1;
+    position:absolute;
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    
+    .block{
+       /* outline: 1px solid black; */
+        width: 6vw;
+        height: 10vh;
+        background-image: url(pexels-gabby-k-6238050.jpg);
+        backdrop-filter: blur(3px);
+        transition: transform 0.5s ease-in-out;
+        overflow: hidden;
+       
+    }
+}
+
+.block:hover{
+    transform: matrix(1, 0.2, 0.2, 1, 0, 0);
+}
+#outergrid{
+    position: absolute;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+   
+    z-index: 99;
+}
+#outercal{
+    cursor:none !important;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    background-color: white;
+    height: 30rem;
+    width: 20rem;
+    border-radius: 10px;
+    transform: translate(45%,0);
+   
+}
+
+#displaytext{
+    height: 5rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    color: black;
+    overflow: hidden;
+    text-align: left;
+}
+#operations_grid{
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow:rows;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: white;
+
+    
+}
+.operator{
+    text-align: center;
+    background-color: rgb(255, 121, 10);
+    color: white;
+    border-radius: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 4rem;
+}
+.operator:hover{
+    background-color: rgb(189, 85, 0);
+}
+.operand{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 4rem;
+}
+
+.operand:hover{
+    background-color: blue;
+}
+button{
+    cursor: none;
+    transition: background-color 0.3s ease;
+   
+}
